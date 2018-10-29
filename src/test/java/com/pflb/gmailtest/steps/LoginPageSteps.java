@@ -24,6 +24,7 @@ public class LoginPageSteps {
     public void getDriver() {
         driver = DriverManager.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        loginPage = new LoginPage(driver);
 
     }
 
@@ -35,10 +36,7 @@ public class LoginPageSteps {
 
     @Пусть("^открыта страница входа на сайт \"(.+)\"$")
     public void openLoginPage(String url) {
-        loginPage = new LoginPage(driver);
         loginPage.open(url);
-
-
     }
 
     @И("^пользователь вводит в поле \"([^\"]*)\" значение \"([^\"]*)\"$")
@@ -53,34 +51,15 @@ public class LoginPageSteps {
     }}
 
     @Тогда("^нажимает кнопку \"([^\"]*)\"$")
-    public void pressButton1(String btnName) {
-        if (!btnName.equals("Далее")) {
-            throw new IllegalArgumentException("Invalid button name :" + btnName);
-        }
+    public void pressButton1(String btnName) throws InterruptedException {
+
         loginPage.submit();
 
     }
-    @И("^пользователь вводит \"([^\"]*)\" значение \"([^\"]*)\"$")
+    @И("^пользователь вводит \"Введите пароль\" значение \"([^\"]*)\"$")
     public void setPassword(String value) {
         loginPage.fillPassword(value);
-        throw new IllegalArgumentException("Invalid password:" + value);
     }
-
-
-    @Тогда("^нажимает снова кнопку \"([^\"]*)\"$")
-    public void pressButton2(String btn) {
-        if (!btn.equals("Далее")) {
-            throw new IllegalArgumentException("Invalid button name :" + btn);
-        }
-        loginPage.submit();
-    }
-
-
-    @Тогда("^открылась страница Gmail$")
-    public void pageOpened() {
-        mainPage = new MainPage(driver);
-    }
-
 
 
 }

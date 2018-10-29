@@ -17,7 +17,6 @@ public abstract class AbstractPage {
         this.driver = driver;
         new WebDriverWait(driver, 10);
         PageFactory.initElements(driver, this);
-        driver.get("https://gmail.com");
     }
 
     public void open(String url, WebDriver driver){

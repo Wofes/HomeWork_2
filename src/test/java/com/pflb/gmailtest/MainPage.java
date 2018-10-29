@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class MainPage extends AbstractTestNGCucumberTests {
 
-    public MainPage(WebDriver driver) {
+    public MainPage() {
     }
 }
 

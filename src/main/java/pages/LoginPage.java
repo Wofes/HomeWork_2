@@ -1,9 +1,11 @@
-package pages;
+﻿package pages;
 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.concurrent.TimeUnit;
 
 public class LoginPage extends AbstractPage {
 
@@ -12,7 +14,7 @@ public class LoginPage extends AbstractPage {
 
 
 
-    @FindBy(xpath = ("//span[text()='Далее']"))
+    @FindBy(xpath = "//span[text()='Далее']")
     public WebElement pressContinue;
 
     @FindBy(xpath = "//input[@autocomplete = 'current-password']")
@@ -37,7 +39,8 @@ public class LoginPage extends AbstractPage {
 
     }
 
-    public void submit() {
+    public void submit() throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);;
         pressContinue.click();
     }
 

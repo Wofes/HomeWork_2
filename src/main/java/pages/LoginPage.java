@@ -12,7 +12,7 @@ public class LoginPage extends AbstractPage {
 
 
 
-    @FindBy(xpath = ("//span[text()='Далее']"))
+    @FindBy(xpath = "//span[text()='Далее']")
     public WebElement pressContinue;
 
     @FindBy(xpath = "//input[@autocomplete = 'current-password']")
@@ -37,7 +37,8 @@ public class LoginPage extends AbstractPage {
 
     }
 
-    public void submit() {
+    public void submit() throws InterruptedException {
+        Thread.sleep(1000); //TODO Пиши эксплисид вэйт
         pressContinue.click();
     }
 

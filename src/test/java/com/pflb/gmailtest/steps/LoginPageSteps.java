@@ -17,14 +17,14 @@ import java.util.concurrent.TimeUnit;
 public class LoginPageSteps {
     private WebDriver driver = null;
     private MainPage mainPage = null;
-    private LoginPage loginPage;
+    private LoginPage loginPage = null;
 
 
     @Before
     public void getDriver() {
         driver = DriverManager.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        loginPage = new LoginPage(driver); //Инстанс страницы лучше создать здесь
+        loginPage = new LoginPage(driver);
 
     }
 
@@ -41,46 +41,82 @@ public class LoginPageSteps {
 
     @И("^пользователь вводит в поле \"([^\"]*)\" значение \"([^\"]*)\"$")
     public void setTextToInput(String fidelName, String value) {
-        switch(fidelName){
+        switch (fidelName) {
             case "имя пользователя":
                 loginPage.fillUserName(value);
                 break;
 
-        default:
-        throw new IllegalArgumentException("Invalid name:" + fidelName);
-    }}
+            default:
+                throw new IllegalArgumentException("Invalid name:" + fidelName);
+        }
+    }
 
     @Тогда("^нажимает кнопку \"([^\"]*)\"$")
-    public void pressButton1(String btnName) throws InterruptedException {
-//        if (!btnName.equals("Далее")) {
-//            throw new IllegalArgumentException("Invalid button name :" + btnName); //Это еще зачем???
-//        }
-
+    public void pressButton(String btnName) throws InterruptedException {
         loginPage.submit();
-
     }
-    @И("^пользователь вводит \"Введите пароль\" значение \"([^\"]*)\"$")//Передается две переменных, а используется только одна!
+
+    @И("^пользователь вводит \"Введите пароль\" значение \"([^\"]*)\"$")
     public void setPassword(String value) {
         loginPage.fillPassword(value);
-//        throw new IllegalArgumentException("Invalid password:" + value);//У тебя этот эксепшн кидается каждый раз вне зависимости от хода теста. Нахрена? Это рушит весь тест
     }
 
-//Зачем дважды писать один и тот же код с одним и тем же функционалом?????
-//    @Тогда("^нажимает снова кнопку \"([^\"]*)\"$")
-//    public void pressButton2(String btn) {
-//        if (!btn.equals("Далее")) {
-//            throw new IllegalArgumentException("Invalid button name :" + btn);
-//        }
-//        loginPage.submit();
-//    }
+    @Тогда("^снова нажимает кнопку \"([^\"]*)\"$")
+    public void pressButton1(String btnName) throws InterruptedException {
+        loginPage.submit();
+    }
+
+    @И("^пользлователь нажимает кнопку \"([^\"]*)\" для создания письма$")
+    public void pressWritingButton(String btnName) throws InterruptedException {
+        loginPage.write();
+    }
+
+    @Тогда("^в строке получателя вводится адресат \"([^\"]*)\"$")
+    public void writtingAddresat(String value) {
+        loginPage.fillAdress(value);
+    }
+
+    @И("^в теме вводит \"([^\"]*)\"$")
+    public void themeWriting(String value) {
+        loginPage.fillTheme(value);
+    }
 
 
-//    @Тогда("^открылась страница Gmail$")
-//    public void pageOpened() { //Это, блин, вообще что?
-//        mainPage = new MainPage(driver);
-//    }
+    @И("^в теле письма вводится \"([^\"]*)\"$")
+    public void writingHello(String value) throws InterruptedException {
+        loginPage.fillTextMessage(value);
+    }
+
+    @И("^нажимается кнопка \"([^\"]*)\"$")
+    public void pressCloseAndSave(String closeSave) throws InterruptedException {
+        synchronized (loginPage.closeAndSave) {
+            loginPage.closeAndSave.wait(5000);
+        }
+        loginPage.closeAndSave();
+    }
 
 
+    @Тогда("^нажимает пользователь нажимает \"([^\"]*)\"$")
+    public void pressDraft(String draft) throws InterruptedException {
+        synchronized (loginPage.pressDraft) {
+            loginPage.pressDraft.wait(3000);
 
+        }
+        loginPage.pressDraft();
+    }
+
+    @И("^нажимает на последений черновик с надписью \"([^\"]*)\"$")
+    public void pressThemeOfDraft(String theme) throws InterruptedException {
+
+        synchronized (loginPage.pressThemeText) {
+            loginPage.pressThemeText.wait(5500);
+        }
+        loginPage.pressThemeText();
+    }
+
+    @И("^нажимается кнопку \"([^\"]*)\"$")
+    public void sendingToAdr(String sendbtn) throws InterruptedException {
+        loginPage.pressSendBtn();
+    }
 }
 

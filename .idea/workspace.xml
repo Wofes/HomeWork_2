@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52f38fb8-f09a-4242-8b38-82f885ec0634" name="Default Changelist" comment="" />
+    <list default="true" id="52f38fb8-f09a-4242-8b38-82f885ec0634" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/HomeWork_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,23 +112,94 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="726743962">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="feature" value="72" />
+          <entry key="java" value="490" />
+          <entry key="txt" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Cucumber" value="72" />
+          <entry key="JAVA" value="490" />
+          <entry key="PLAIN_TEXT" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+    <session id="-830927102">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.124" value="1" />
+          <entry key="project.open.time.146" value="1" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.88" value="1" />
+          <entry key="project.open.time.91" value="1" />
+          <entry key="project.open.time.92" value="1" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="feature" value="487" />
+          <entry key="java" value="2710" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Cucumber" value="487" />
+          <entry key="JAVA" value="2710" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="3" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/AbstractPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="136">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,15 +207,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="337">
+              <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#1344#1345#0" expanded="true" />
+                <element signature="e#1375#1376#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,21 +224,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/features/gmail.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/steps/LoginPageSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="1581">
+              <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2174#2175#0" expanded="true" />
-                <element signature="e#2221#2222#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#2165#2166#0" expanded="true" />
+                <element signature="e#2208#2209#0" expanded="true" />
+                <element signature="e#2293#2294#0" expanded="true" />
+                <element signature="e#2335#2336#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,8 +251,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/helpers/DriverManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="340">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,8 +263,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="119">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,8 +275,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="153">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,9 +290,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="TestNG Test Class" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -222,16 +307,18 @@
         <option value="$PROJECT_DIR$/src/main/java/helper/DriverManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/phfl/gmailtest/features/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/helpers/DriverManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/phfl/gmailtest/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/phfl/gmailtest/features/gmail.feature" />
         <option value="$PROJECT_DIR$/src/main/java/interfaces/NameOfElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/MainPage.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/steps/LoginPageSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/features/gmail.feature" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AbstractPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/LoginPageTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/helpers/DriverManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/features/gmail.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/steps/LoginPageSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
       </list>
     </option>
@@ -253,9 +340,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="846" />
-    <option name="y" value="8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="293" />
+    <option name="y" value="4" />
     <option name="width" value="862" />
     <option name="height" value="1005" />
   </component>
@@ -282,72 +369,72 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gmailtest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gmailtest" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestGmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestGmail" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWork_2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -358,13 +445,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540834725762" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541320314919" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -372,8 +460,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pages" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.phfl.gmailtest" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ivan\Desktop\TestGmail\src\main\resources" />
@@ -391,7 +485,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Вход в систему позитивный">
+  <component name="RunManager" selected="Cucumber java.Scenario: Вход в систему позитивный (1)">
+    <configuration name="Feature: gmail (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/features/gmail.feature" />
+      <option name="GLUE" value="com.pflb.gmailtest.steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="HomeWork_2" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: gmail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: gmail" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/features/gmail.feature" />
@@ -400,6 +512,25 @@
       <module name="TestGmail" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: gmail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Вход в систему позитивный (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/features/gmail.feature" />
+      <option name="GLUE" value="com.pflb.gmailtest.steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="HomeWork_2" />
+      <option name="NAME_FILTER" value="^Вход в систему позитивный$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Вход в систему позитивный$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Вход в систему позитивный" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -449,11 +580,15 @@
       <item itemvalue="Cucumber java.Feature: gmail" />
       <item itemvalue="Cucumber java.Scenario: Вход в систему позитивный" />
       <item itemvalue="TestNG.MainPage" />
+      <item itemvalue="Cucumber java.Feature: gmail (1)" />
+      <item itemvalue="Cucumber java.Scenario: Вход в систему позитивный (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Вход в систему позитивный" />
+        <item itemvalue="Cucumber java.Scenario: Вход в систему позитивный (1)" />
+        <item itemvalue="Cucumber java.Feature: gmail (1)" />
         <item itemvalue="TestNG.MainPage" />
+        <item itemvalue="Cucumber java.Scenario: Вход в систему позитивный" />
         <item itemvalue="Cucumber java.Feature: gmail" />
       </list>
     </recent_temporary>
@@ -471,43 +606,60 @@
       <workItem from="1540824950886" duration="6842000" />
       <workItem from="1540832031258" duration="1415000" />
       <workItem from="1540833694535" duration="1284000" />
+      <workItem from="1540846469069" duration="585000" />
+      <workItem from="1541173541631" duration="11623000" />
+      <workItem from="1541247791870" duration="8335000" />
+      <workItem from="1541256401316" duration="2436000" />
+      <workItem from="1541280987056" duration="867000" />
+      <workItem from="1541316941486" duration="3469000" />
+      <workItem from="1541320835351" duration="836000" />
+      <workItem from="1541321775084" duration="102000" />
+      <workItem from="1541322033358" duration="473000" />
     </task>
+    <task id="LOCAL-00001" summary="Правки">
+      <created>1540845788689</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540845788689</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 19h 50m 06s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 11h 45m 03s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 19h 56m 14s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 11h 47m 06s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 20h 01m 06s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 11h 49m 47s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 20h 02m 46s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 11h 52m 13s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 20h 25m 13s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 11h 54m 15s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 20h 30m 01s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 11h 57m 46s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 20h 34m 12s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 12h 02m 36s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 20h 35m 37s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 12h 04m 02s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 20h 36m 46s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 12h 05m 36s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Вход_в_систему_позитивный - 2018.10.29 at 20h 38m 35s.xml">
-      <configuration name="Scenario: Вход в систему позитивный" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Вход_в_систему_позитивный_(1) - 2018.11.04 at 12h 07m 02s.xml">
+      <configuration name="Scenario: Вход в систему позитивный (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9541000" />
+    <option name="totallyTimeSpent" value="38267000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,10 +671,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15342298" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17114915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -531,15 +682,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49875313" visible="true" weight="0.39954075" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3283582" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49875313" weight="0.39839265" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.33754304" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50124687" side_tool="true" weight="0.40941176" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50124687" side_tool="true" weight="0.4087256" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.33754304" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.3294621" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -588,6 +739,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правки" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -617,24 +772,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/String.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/String.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/FluentWait.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+        <state relative-caret-position="-122">
+          <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Object.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/pagefactory/internal/LocatingElementHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="340">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPageTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.txt" />
+    <entry file="file://$PROJECT_DIR$/target/test-classes/com/pflb/gmailtest/steps/LoginPageSteps.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/RuntimeGlue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AbstractPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/features/gmail.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/steps/LoginPageSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#2293#2294#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/helpers/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state relative-caret-position="340">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -643,8 +848,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="119">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -653,18 +858,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AbstractPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="153">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -673,31 +868,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="337">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/features/gmail.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pflb/gmailtest/steps/LoginPageSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2174#2175#0" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
           </folding>
         </state>
       </provider>

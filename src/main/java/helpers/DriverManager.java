@@ -18,10 +18,10 @@ public class DriverManager {
         }
         return driver;
     }
-    public static void closeDriver() {
+    public static void closeDriver() throws InterruptedException {
         if (driver != null) {
-            driver.manage().timeouts().implicitlyWait(5, SECONDS);
-            driver.quit();
+            System.out.println("Im done");
+            driver.close();
 
     }
 }}

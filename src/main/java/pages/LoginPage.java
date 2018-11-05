@@ -1,11 +1,18 @@
 package pages;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
+
+import static java.util.concurrent.TimeUnit.SECONDS;
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 
 public class LoginPage extends AbstractPage {
@@ -34,13 +41,14 @@ public class LoginPage extends AbstractPage {
     @FindBy(xpath = "//img[@aria-label = 'Сохранить и закрыть']")
     public WebElement closeAndSave;
 
-    @FindBy(xpath = "//*[text()='Черновики']")
+
+    @FindBy(xpath = "//*[contains (@href, '#drafts')]")    //a@href= 'https://mail.google.com/mail/#drafts
     public WebElement pressDraft;
 
-    @FindBy(xpath = "//tr[@class = 'bog'][text() = 'Test text']")//(text(),'Test text')
-    public WebElement pressThemeText;//*[@id=":dv"]
+    @FindBy(xpath = "//*[@class = 'bog']//*[text() = 'Test text'][1]")//(text(),'Test text')
+    public WebElement pressThemeText;
 
-    @FindBy(xpath = "//div[@aria-label = 'Отправить']")
+    @FindBy(xpath = "//div[@role = 'button' and text () = 'Отрправить']") //[@role = 'button'][1]"
     public WebElement pressSendBtn;
 
 
@@ -79,36 +87,55 @@ public class LoginPage extends AbstractPage {
 
     }
 
-    public void submit() throws InterruptedException {
+    public void submit() {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pressContinue.click();
 
     }
 
-    public void write() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+    public void write()  {
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         buttonWrite.click();
     }
 
-    public void closeAndSave() throws InterruptedException {
-
+    public void closeAndSave()  {
+        try {
+            WebElement explicitWait = (new WebDriverWait(driver, 10))
+            .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Сохранено']")));
+        } finally {
         closeAndSave.click();
-    }
+    }}
 
-    public void pressDraft() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+    public void pressDraft()  {
+
+        new Actions(driver).moveToElement(driver.findElement(By.xpath("//*[@class = 'qj qr']"))).click().build().perform();
+        try {
+            WebElement explicitWait = (new WebDriverWait(driver, 10))
+                    .until(ExpectedConditions.elementToBeClickable(pressDraft));
+        } finally {
         pressDraft.click();
-    }
 
-    public void pressThemeText() throws InterruptedException  {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }}
+
+    public void pressThemeText() throws AssertionError  {
+        try {
+            WebElement explicitWait = (new WebDriverWait(driver, 10))
+                    .until(ExpectedConditions.elementToBeClickable(pressThemeText));
+        } finally {
         pressThemeText.click();
-        }
+        }}
 
-    public void pressSendBtn() throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        pressSendBtn.click();
-    }
+    public void pressSendBtn() throws AssertionError {
+
+//        driver.manage().timeouts().implicitlyWait(10, SECONDS);
+//        new Actions(driver).moveToElement(driver.findElement(By.xpath("//*[@class = 'gU Up']"))).click().build().perform();
+//
+//        try {
+//            WebElement explicitWait = (new WebDriverWait(driver, 10))
+//                    .until(elementToBeClickable(By.xpath("//div[text() = 'Отправить']")));
+//        } finally {
+       pressSendBtn.click();
 
 
-}
+
+}}

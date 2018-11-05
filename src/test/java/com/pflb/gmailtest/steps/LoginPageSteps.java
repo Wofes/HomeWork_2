@@ -8,10 +8,15 @@ import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.Пусть;
 import cucumber.api.java.ru.Тогда;
 import helpers.DriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 
 public class LoginPageSteps {
@@ -29,7 +34,7 @@ public class LoginPageSteps {
     }
 
     @After
-    public void closeDriver() {
+    public void closeDriver() throws InterruptedException {
         DriverManager.closeDriver();
     }
 
@@ -52,7 +57,7 @@ public class LoginPageSteps {
     }
 
     @Тогда("^нажимает кнопку \"([^\"]*)\"$")
-    public void pressButton(String btnName) throws InterruptedException {
+    public void pressButton(String btnName)  {
         loginPage.submit();
     }
 
@@ -62,12 +67,12 @@ public class LoginPageSteps {
     }
 
     @Тогда("^снова нажимает кнопку \"([^\"]*)\"$")
-    public void pressButton1(String btnName) throws InterruptedException {
+    public void pressButton1(String btnName) {
         loginPage.submit();
     }
 
     @И("^пользлователь нажимает кнопку \"([^\"]*)\" для создания письма$")
-    public void pressWritingButton(String btnName) throws InterruptedException {
+    public void pressWritingButton(String btnName)  {
         loginPage.write();
     }
 
@@ -83,40 +88,38 @@ public class LoginPageSteps {
 
 
     @И("^в теле письма вводится \"([^\"]*)\"$")
-    public void writingHello(String value) throws InterruptedException {
+    public void writingHello(String value) {
         loginPage.fillTextMessage(value);
     }
 
     @И("^нажимается кнопка \"([^\"]*)\"$")
-    public void pressCloseAndSave(String closeSave) throws InterruptedException {
-        synchronized (loginPage.closeAndSave) {
-            loginPage.closeAndSave.wait(5000);
-        }
+    public void pressCloseAndSave(String closeSave) {
         loginPage.closeAndSave();
-    }
+            System.out.println( "Message is save" );
+
+        }
 
 
     @Тогда("^нажимает пользователь нажимает \"([^\"]*)\"$")
-    public void pressDraft(String draft) throws InterruptedException {
-        synchronized (loginPage.pressDraft) {
-            loginPage.pressDraft.wait(3000);
+    public void pressDraft(String draft){
 
-        }
         loginPage.pressDraft();
     }
 
     @И("^нажимает на последений черновик с надписью \"([^\"]*)\"$")
-    public void pressThemeOfDraft(String theme) throws InterruptedException {
+    public void pressThemeOfDraft(String theme) {
 
-        synchronized (loginPage.pressThemeText) {
-            loginPage.pressThemeText.wait(5500);
-        }
-        loginPage.pressThemeText();
+
+            loginPage.pressThemeText();
+        System.out.println( "I found message!" );
+
     }
 
     @И("^нажимается кнопку \"([^\"]*)\"$")
-    public void sendingToAdr(String sendbtn) throws InterruptedException {
+    public void sendingToAdr(String sendbtn) {
+
         loginPage.pressSendBtn();
+        System.out.println( "I send your massage" );
     }
 }
 

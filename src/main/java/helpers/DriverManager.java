@@ -3,7 +3,6 @@ package helpers;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
 
 import static java.util.concurrent.TimeUnit.*;
 
@@ -18,9 +17,8 @@ public class DriverManager {
         }
         return driver;
     }
-    public static void closeDriver() throws InterruptedException {
+    public static void closeDriver()  {
         if (driver != null) {
-            System.out.println("Im done");
             driver.close();
 
     }

@@ -48,7 +48,7 @@ public class LoginPage extends AbstractPage {
     @FindBy(xpath = "//*[@class = 'bog']//*[text() = 'Test text'][1]")//(text(),'Test text')
     public WebElement pressThemeText;
 
-    @FindBy(xpath = "//div[@role = 'button' and text () = 'Отрправить']") //[@role = 'button'][1]"
+    @FindBy(xpath = "//div[@role = 'button'][text () = 'Отправить']") //[@role = 'button'][1]"
     public WebElement pressSendBtn;
 
 
@@ -81,12 +81,6 @@ public class LoginPage extends AbstractPage {
         return this;
     }
 
-
-    public LoginPage(WebDriver driver) {
-        super(driver);
-
-    }
-
     public void submit() {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pressContinue.click();
@@ -100,42 +94,49 @@ public class LoginPage extends AbstractPage {
 
     public void closeAndSave()  {
         try {
-            WebElement explicitWait = (new WebDriverWait(driver, 10))
-            .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Сохранено']")));
+            WebElement waittCaS = (new WebDriverWait(driver, 10))
+                    .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Сохранено']")));
         } finally {
-        closeAndSave.click();
-    }}
+            closeAndSave.click();
+        }}
 
     public void pressDraft()  {
 
         new Actions(driver).moveToElement(driver.findElement(By.xpath("//*[@class = 'qj qr']"))).click().build().perform();
         try {
-            WebElement explicitWait = (new WebDriverWait(driver, 10))
+            WebElement waitDraft = (new WebDriverWait(driver, 10))
                     .until(ExpectedConditions.elementToBeClickable(pressDraft));
         } finally {
-        pressDraft.click();
+            pressDraft.click();
 
-    }}
+        }}
 
     public void pressThemeText() throws AssertionError  {
         try {
             WebElement explicitWait = (new WebDriverWait(driver, 10))
                     .until(ExpectedConditions.elementToBeClickable(pressThemeText));
         } finally {
-        pressThemeText.click();
+            pressThemeText.click();
         }}
 
     public void pressSendBtn() throws AssertionError {
 
 //        driver.manage().timeouts().implicitlyWait(10, SECONDS);
-//        new Actions(driver).moveToElement(driver.findElement(By.xpath("//*[@class = 'gU Up']"))).click().build().perform();
+//        new Actions(driver).moveToElement(driver.findElement(By.xpath("//div[@role = 'button'][text () = 'Отправить']"))).build().perform();
 //
 //        try {
 //            WebElement explicitWait = (new WebDriverWait(driver, 10))
-//                    .until(elementToBeClickable(By.xpath("//div[text() = 'Отправить']")));
+//                    .until(elementToBeClickable(pressSendBtn));
 //        } finally {
-       pressSendBtn.click();
+        pressSendBtn.click();
 
 
 
-}}
+    }
+
+    public LoginPage(WebDriver driver) {
+        super(driver);
+
+    }
+
+}

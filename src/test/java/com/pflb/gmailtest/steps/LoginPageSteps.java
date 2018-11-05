@@ -10,7 +10,7 @@ import cucumber.api.java.ru.Тогда;
 import helpers.DriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
+//import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.LoginPage;
@@ -22,7 +22,7 @@ import java.util.concurrent.TimeoutException;
 public class LoginPageSteps {
     private WebDriver driver = null;
     private MainPage mainPage = null;
-    private LoginPage loginPage = null;
+    private LoginPage loginPage;
 
 
     @Before
@@ -34,7 +34,7 @@ public class LoginPageSteps {
     }
 
     @After
-    public void closeDriver() throws InterruptedException {
+    public void closeDriver() {
         DriverManager.closeDriver();
     }
 
@@ -99,17 +99,13 @@ public class LoginPageSteps {
 
         }
 
-
     @Тогда("^нажимает пользователь нажимает \"([^\"]*)\"$")
     public void pressDraft(String draft){
-
         loginPage.pressDraft();
     }
 
     @И("^нажимает на последений черновик с надписью \"([^\"]*)\"$")
     public void pressThemeOfDraft(String theme) {
-
-
             loginPage.pressThemeText();
         System.out.println( "I found message!" );
 
@@ -117,7 +113,6 @@ public class LoginPageSteps {
 
     @И("^нажимается кнопку \"([^\"]*)\"$")
     public void sendingToAdr(String sendbtn) {
-
         loginPage.pressSendBtn();
         System.out.println( "I send your massage" );
     }

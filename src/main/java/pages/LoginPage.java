@@ -77,9 +77,13 @@ public class LoginPage extends AbstractPage {
     }
 
     public LoginPage fillTextMessage(String test)  {
+        try {
+            WebElement waitTextMessage = (new WebDriverWait(driver, 10))
+                    .until(ExpectedConditions.elementToBeClickable(inputTextMessage));
+        } finally {
        inputTextMessage.sendKeys(test);
         return this;
-    }
+    }}
 
     public void submit() {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -124,15 +128,15 @@ public class LoginPage extends AbstractPage {
 //        driver.manage().timeouts().implicitlyWait(10, SECONDS);
 //        new Actions(driver).moveToElement(driver.findElement(By.xpath("//div[@role = 'button'][text () = 'Отправить']"))).build().perform();
 //
-//        try {
-//            WebElement explicitWait = (new WebDriverWait(driver, 10))
-//                    .until(elementToBeClickable(pressSendBtn));
-//        } finally {
+        try {
+            WebElement waitButton = (new WebDriverWait(driver, 10))
+                    .until(elementToBeClickable(pressSendBtn));
+        } finally {
         pressSendBtn.click();
 
 
 
-    }
+    }}
 
     public LoginPage(WebDriver driver) {
         super(driver);

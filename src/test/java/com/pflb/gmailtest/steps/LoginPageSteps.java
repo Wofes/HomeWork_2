@@ -1,22 +1,18 @@
 package com.pflb.gmailtest.steps;
 
 import com.pflb.gmailtest.MainPage;
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.Пусть;
 import cucumber.api.java.ru.Тогда;
 import helpers.DriverManager;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.LoginPage;
 
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+
+//import org.openqa.selenium.support.ui.ExpectedCondition;
 
 
 public class LoginPageSteps {
@@ -77,19 +73,19 @@ public class LoginPageSteps {
     }
 
     @Тогда("^в строке получателя вводится адресат \"([^\"]*)\"$")
-    public void writtingAddresat(String value) {
-        loginPage.fillAdress(value);
+    public void writtingAddresat(String adr) {
+        loginPage.fillAdress(adr);
     }
 
     @И("^в теме вводит \"([^\"]*)\"$")
-    public void themeWriting(String value) {
-        loginPage.fillTheme(value);
+    public void themeWriting(String theme) {
+        loginPage.fillTheme(theme);
     }
 
 
     @И("^в теле письма вводится \"([^\"]*)\"$")
-    public void writingHello(String value) {
-        loginPage.fillTextMessage(value);
+    public void writingHello(String text) {
+        loginPage.fillTextMessage(text);
     }
 
     @И("^нажимается кнопка \"([^\"]*)\"$")

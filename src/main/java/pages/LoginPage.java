@@ -6,12 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.annotation.Nullable;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 
@@ -51,6 +53,19 @@ public class LoginPage extends AbstractPage {
     @FindBy(xpath = "//div[@role = 'button'][text () = 'Отправить']") //[@role = 'button'][1]"
     public WebElement pressSendBtn;
 
+//    @FindBy(xpath = "//span[text () = 'Письмо отправлено.']")
+//    public WebElement messageSend;
+
+    @FindBy(xpath = "//*[contains (@href, 'sent')]")
+    public WebElement sendingMesg;
+
+    @FindBy(xpath ="//span [@email = 'aleksandr.barov13@gmail.com']")
+    public WebElement adrMes;
+
+    @FindBy(xpath = "//*[@aria-label = 'Тема']")
+    public WebElement themeMes;
+
+//    @FindBy(xpath = "//")
 
     public void open(String url) {
         driver.get(url);
@@ -76,14 +91,15 @@ public class LoginPage extends AbstractPage {
         return this;
     }
 
-    public LoginPage fillTextMessage(String test)  {
+    public LoginPage fillTextMessage(String test) {
         try {
             WebElement waitTextMessage = (new WebDriverWait(driver, 10))
                     .until(ExpectedConditions.elementToBeClickable(inputTextMessage));
         } finally {
-       inputTextMessage.sendKeys(test);
-        return this;
-    }}
+            inputTextMessage.sendKeys(test);
+            return this;
+        }
+    }
 
     public void submit() {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -91,20 +107,22 @@ public class LoginPage extends AbstractPage {
 
     }
 
-    public void write()  {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    public void write() {
+        WebElement writingButton = (new WebDriverWait(driver, 10))
+                .until(ExpectedConditions.elementToBeClickable(buttonWrite));
         buttonWrite.click();
     }
 
-    public void closeAndSave()  {
+    public void closeAndSave() {
         try {
             WebElement waittCaS = (new WebDriverWait(driver, 10))
                     .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Сохранено']")));
         } finally {
             closeAndSave.click();
-        }}
+        }
+    }
 
-    public void pressDraft()  {
+    public void pressDraft() {
 
         new Actions(driver).moveToElement(driver.findElement(By.xpath("//*[@class = 'qj qr']"))).click().build().perform();
         try {
@@ -113,15 +131,17 @@ public class LoginPage extends AbstractPage {
         } finally {
             pressDraft.click();
 
-        }}
+        }
+    }
 
-    public void pressThemeText() throws AssertionError  {
+    public void pressThemeText() throws AssertionError {
         try {
             WebElement explicitWait = (new WebDriverWait(driver, 10))
                     .until(ExpectedConditions.elementToBeClickable(pressThemeText));
         } finally {
             pressThemeText.click();
-        }}
+        }
+    }
 
     public void pressSendBtn() throws AssertionError {
 
@@ -131,16 +151,79 @@ public class LoginPage extends AbstractPage {
         try {
             WebElement waitButton = (new WebDriverWait(driver, 10))
                     .until(elementToBeClickable(pressSendBtn));
+
+
         } finally {
-        pressSendBtn.click();
-
-
-
-    }}
-
-    public LoginPage(WebDriver driver) {
-        super(driver);
-
+            pressSendBtn.click();
+        }
     }
 
-}
+    private void assertTrue(boolean equals) {
+    }
+
+    public void sendMessageOrNot() {
+
+        try {
+            WebElement waittSendingMessage = (new WebDriverWait(driver, 8))
+                    .until(new ExpectedCondition<WebElement>() {
+                        @Nullable
+                        @Override
+                        public WebElement apply(@Nullable WebDriver driver) {
+                            return driver.findElement(By.xpath("//span[text()='Письмо отправлено.']"));
+                        }
+                    });
+
+            assertTrue(waittSendingMessage.getText().equals("Письмо отправлено."));
+        } catch (NoSuchElementException e) {
+            System.out.println("Sorry, I lost it");
+            e.printStackTrace();
+        } finally {
+            System.out.println("Message is send");
+        }}
+    public void sendsMessage () {
+        try {
+            WebElement sendsMesg = (new WebDriverWait(driver, 6))
+                    .until(ExpectedConditions.elementToBeClickable(sendingMesg));
+        } finally {
+            sendingMesg.click();
+        }
+    }
+    public void themeSendMessg () {
+        try {
+            WebElement waitTheme = (new WebDriverWait(driver, 6))
+                    .until(ExpectedConditions.elementToBeClickable(pressThemeText));
+        } finally {
+            pressThemeText.click();
+        }
+    }
+    public void rightOrNotTheme () {
+        try {
+            WebElement waitTheme = (new WebDriverWait(driver, 10))
+                    .until(ExpectedConditions.elementToBeClickable(themeMes));
+            assertTrue(themeMes.getText().equals("Test text"));
+        }catch (NoSuchElementException e){
+            System.out.println("It's not that message");
+            e.printStackTrace();
+//            wait.until(ExpectedConditions.elementToBeClickable(inputTextMessage));
+//            wait.until(ExpectedConditions.elementToBeClickable(inputAdress));
+    }}
+
+    public void rightOrNotAdr () {
+        try {WebElement waitAdr = (new WebDriverWait(driver, 6))
+                .until(ExpectedConditions.elementToBeClickable(adrMes));
+            assertTrue(adrMes.getText().equals("aleksandr.barov13@gmail.com"));
+        }catch (NoSuchElementException e){
+            System.out.println("It's not that message");
+            e.printStackTrace();}}
+
+    public void rightOrNotText(){
+        try {WebElement waitText = (new WebDriverWait(driver, 6))
+                .until(ExpectedConditions.elementToBeClickable(inputTextMessage));
+            assertTrue(inputTextMessage.getText().equals("Hello"));
+    }catch (NoSuchElementException e){
+            System.out.println("It's not that message");
+            e.printStackTrace();}
+    }
+    public LoginPage(WebDriver driver) {super(driver);}
+
+    }

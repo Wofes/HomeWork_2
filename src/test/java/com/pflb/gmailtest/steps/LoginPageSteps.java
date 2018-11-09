@@ -3,6 +3,7 @@ package com.pflb.gmailtest.steps;
 import com.pflb.gmailtest.MainPage;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.ru.Если;
 import cucumber.api.java.ru.И;
 import cucumber.api.java.ru.Пусть;
 import cucumber.api.java.ru.Тогда;
@@ -110,7 +111,34 @@ public class LoginPageSteps {
     @И("^нажимается кнопку \"([^\"]*)\"$")
     public void sendingToAdr(String sendbtn) {
         loginPage.pressSendBtn();
-        System.out.println( "I send your massage" );
+       }
+
+    @Если("^сообщение отправлено получим тект \"([^\"]*)\", а если нет \"([^\"]*)\"$")
+    public void messageSendOrNot(String sendText, String ansendText)  {loginPage.sendMessageOrNot();}
+
+    @Если("^сообщение отправлено, то заходим в \"([^\"]*)\"$")
+    public void sendMessages(String sendings)  {loginPage.sendsMessage();}
+
+
+    @И("^нажимаем на отправленное сообщение с темой \"([^\"]*)\"$")
+    public void themeAgain(String themeAgain)  {loginPage.themeSendMessg(); }
+
+
+
+    @И("^проверяем правильность заполененнение поля темы$")
+    public void rightOrNotTheme()  {loginPage.rightOrNotTheme(); }
+
+
+    @И("^проверяем правильность заполененнение опля адресата$")
+    public void rightOrNotAdr() { loginPage.rightOrNotAdr();}
+
+
+    @И("^проверяем правильность заполененнение поля текста$")
+    public void rightOrNotText() {loginPage.rightOrNotText();}
+
+    @И("^пишем, что вы молодец$")
+    public void congrats()  {
+      System.out.println("I send Messge! Your Welcome");
     }
 }
 
